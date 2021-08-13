@@ -19,24 +19,13 @@ og_img= cv2.cvtColor(og_img, cv2.COLOR_BGR2RGB)
 
 filler_img = cv2.imread("pupil.jpg")
 filler_img=cv2.cvtColor(filler_img, cv2.COLOR_BGR2RGB)
-#cv2 yses Blue Green Red instead of normal RGB
-
-
-
-# fullfiller_img=filler_img[500:1800,850:2750]
-# pup = filler_img[750:1350,1250:2000]  #aspect 15:12//width to height. However this code switches the convetion
+#cv2 uses Blue Green Red instead of normal RGB
 
 def resize(img,scale):
     return cv2.resize(img,(round(img.shape[1]*scale),round(img.shape[0]*scale)))
 
 
 resize_filler = resize(filler_img,0.025)  #smaller value means more filler image, but they will be of less quality
-
-
-
-# color_img = resize_pup*[0,0,0] + [255,255,255]
-# color_img = color_img.astype('uint8')
-# blend = cv2.addWeighted(resize_pup, 0.5, color_img, 0.7, 0.0)
 
 def make_com(img,filler):
     """
