@@ -1,5 +1,5 @@
 # Image-made-up-of-other-images-creator
-Takes an Image and makes the image be created of other images. So you will have an Image made up of another image. 
-Can also make the image fractal once by making the Image be made up of the same image. 
-og_img is the image that will be replaced by smaller versions of filler_img.
-Also, using higher quality images for the filler_img and og_img makes it look nicer. 
+Takes an Image and makes the image be created of other images. So you will have an Image made up of other images.
+Image_from_image.py makes the main image made up of a single image, while Image_from_many_Images.py can use a dataset of images to make the photo.
+Examples include a cat made up of an eye, and obama made up of a part of the MNIST Dataset.
+
