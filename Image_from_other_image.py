@@ -13,7 +13,7 @@ import numpy as np
 import copy
 
 
-os.chdir("/Users/max/Desktop")         
+os.chdir(PATH_TO_DIRECTORY)         
 og_img = cv2.imread("cat4k.jpeg")
 og_img= cv2.cvtColor(og_img, cv2.COLOR_BGR2RGB)
 
